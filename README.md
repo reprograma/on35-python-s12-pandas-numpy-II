@@ -4,7 +4,7 @@
 
 # Tema da Aula
 
-Turma Online X | Semana X | 202X | Professora X
+Turma Online On35 | Semana 12 | 2024 | Professora Daviny Letícia
 
 ### Instruções
 Antes de começar, vamos organizar nosso setup.
