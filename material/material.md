@@ -314,8 +314,8 @@ Pandas permite exportar dados em vários formatos:
 
 **Primeiro Conjunto:** Uma distribuição linear simples com pontos bem ajustados ao longo da linha de regressão.
 
-**Segundo Conjunto:** Um caso onde uma relação linear pode ser sugerida pelos números, mas existe um ponto extremo (outlier) que afeta a análise.
+**Segundo Conjunto:** Os pontos formam uma parábola, não uma linha reta, mostrando que a relação linear não é adequada.
 
-**Terceiro Conjunto:** Os pontos formam uma parábola, não uma linha reta, mostrando que a relação linear não é adequada.
+**Terceiro Conjunto:** Um caso onde uma relação linear pode ser sugerida pelos números, mas existe um ponto extremo (outlier) que afeta a análise.
 
 **Quarto Conjunto:** Um conjunto de dados em que a linha de regressão é completamente determinada por um único ponto fora da curva, enquanto os outros formam uma linha vertical.
