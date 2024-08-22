@@ -1,7 +1,7 @@
 # %%
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 # %%
 # Dados fictícios para exemplo
 dados = {
@@ -51,3 +51,28 @@ df.dtypes
 # %%
 df.isnull().sum()
 # %%
+df.head()
+# %%
+#Gráfico de dispersão
+# %%
+plt.figure(figsize=(10,6))
+plt.scatter(df['Duracao_Consulta_Minutos'], df['Gravidade_Sintomas'],color='blue')
+plt.title('Duração da Consulta x Gravidade dos Sintomas')
+plt.xlabel('Duração da Consulta (minutos)')
+plt.ylabel('Gravidade dos Sintomas (1 a 10)')
+plt.grid(True)
+plt.show()
+# %%
+#Analise do grafico: 
+#Não necessariamente o tempo e a gravidade tem correlação devido a pessoas com sintomas mais graves serem atendidas mais rapidos do que pessoas com sintomas menos graves
+# %%
+colors = df['Gravidade_Sintomas']
+
+plt.figure(figsize=(10, 6))
+scatter = plt.scatter(df['Duracao_Consulta_Minutos'], df['Gravidade_Sintomas'], c=colors, cmap='viridis')
+plt.title('Duração da Consulta x Gravidade dos Sintomas')
+plt.xlabel('Duração da Consulta (minutos)')
+plt.ylabel('Gravidade dos Sintomas (1 a 10)')
+plt.colorbar(scatter, label='Gravidade dos Sintomas')
+plt.grid(True)
+plt.show()
