@@ -39,15 +39,7 @@ Neste exercício, você vai praticar a manipulação, consulta, filtragem, agreg
    datas = pd.date_range(start='2023-01-01', end='2023-12-31', freq='D')
    num_registros = len(datas)
 
-   # Criando DataFrame
-   data = {
-       'Data': np.random.choice(datas, num_registros),
-       'Categoria': np.random.choice(categorias, num_registros),
-       'Quantidade_Vendida': np.random.randint(1, 100, num_registros),
-       'Preco_Unitario': np.round(np.random.uniform(10, 500, num_registros), 2)
-   }
-   df = pd.DataFrame(data)
-   df['Valor_Total'] = df['Quantidade_Vendida'] * df['Preco_Unitario']
+
 
    # Salvando o DataFrame em um arquivo CSV
    df.to_csv('dados_vendas.csv', index=False)
@@ -157,10 +149,10 @@ Bom trabalho!
 
 Terminou o exercício? Dá uma olhada nessa checklist e confere se tá tudo certinho, combinado?!
 
-- [ ] Fiz o fork do repositório.
-- [ ] Clonei o fork na minha máquina (`git clone url-do-meu-fork`).
-- [ ] Resolvi o exercício.
-- [ ] Adicionei as mudanças. (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
-- [ ] Commitei a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
-- [ ] Pushei os commits na minha branch (`git push origin nome-da-branch`)
-- [ ] Criei um Pull Request seguindo as orientaçoes que estao nesse [documento](https://github.com/mflilian/repo-example/blob/main/exercicios/para-casa/instrucoes-pull-request.md).
+- [x] Fiz o fork do repositório.
+- [x] Clonei o fork na minha máquina (`git clone url-do-meu-fork`).
+- [x] Resolvi o exercício.
+- [x] Adicionei as mudanças. (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
+- [x] Commitei a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
+- [x] Pushei os commits na minha branch (`git push origin nome-da-branch`)
+- [x] Criei um Pull Request seguindo as orientaçoes que estao nesse [documento](https://github.com/mflilian/repo-example/blob/main/exercicios/para-casa/instrucoes-pull-request.md).
