@@ -83,10 +83,10 @@ print(agrupado_custom)
 import matplotlib.pyplot as plt
 
 # Agrupamento e cálculo da média
-media_valor_1 = df.groupby('Categoria')['Valor_1'].mean()
+media_valor_1 = df.groupby('Categoria')['estoque da loja1'].mean()
 
 # Gráfico de barras
-media_valor_1.plot(kind='bar', color='skyblue', title='Média de Valor_1 por Categoria')
+media_valor_1.plot(kind='bar', color='skyblue', title='Média de estoque da loja1 por Categoria')
 plt.xlabel('Categoria')
 plt.ylabel('Média de Valor_1')
 plt.show()
